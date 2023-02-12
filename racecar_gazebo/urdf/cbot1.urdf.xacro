@@ -76,7 +76,7 @@
 
   <!-- Camera Definition -->
   <xacro:webcam sub="0" parent="cbot_footprint"
-    transX="0" transY="0" transZ="2.5" />
+    transX="0" transY="5" transZ="2.5" />
 
 
 </robot>
