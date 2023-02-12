@@ -1,0 +1,21 @@
+<?xml version='1.0'?>
+<sdf version="1.4">
+<model name="robocar_track">
+  <pose>0 0 0.01 0 0 0</pose>
+    <link name="link">
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>4.5 7.1685 0.01</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://racecar_description/materials/robocar_track.material</uri>
+            <name>Robocar_track</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>
