@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<robot name="origin" xmlns:xacro="http://ros.org/wiki/xacro">
+  <link name="origin"/>
+
+  <joint name="origin_joint" type="fixed">
+    <parent link="origin"/>
+    <child  link="origin_body_link"/>
+  </joint>
+
+  <link name="origin_body_link">
+   <visual>
+     <origin xyz="0 0 1" rpy="0 0 0" />
+     <geometry>
+       <box size="1 1 1" />
+     </geometry>
+   </visual>
+  </link>
+</robot>
