@@ -12,7 +12,7 @@ class ColorExtract(object):
         self._vel_pub = rospy.Publisher('cmd_vel', Twist, queue_size=1)
         self._blue_pub = rospy.Publisher('blue_image', Image, queue_size=1)
         self._red_pub = rospy.Publisher('red_image', Image, queue_size=1)
-        self._image_sub = rospy.Subscriber('/usb_cam/image_raw', Image, self.callback)
+        self._image_sub = rospy.Subscriber('/webcam0/image_raw', Image, self.callback)
         self._bridge = CvBridge()
         self._vel = Twist()
 
