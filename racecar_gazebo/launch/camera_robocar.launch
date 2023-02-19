@@ -29,12 +29,13 @@
     <remap from="joint_states" to="joint_states_cbot" />
   </node>
  
+  <node name="detect_carpose" pkg="racecar_control" type="detect_carpose.py" />
+
   <!--
      <node pkg="tf" type="static_transform_publisher" name="odom_to_cbot" args="-0.5 0 0 0 0 0 odom cbot_footprint 100" />
   -->
-
- <!--
+ 
  <node name="rviz" pkg="rviz" type="rviz" args="-d $(find racecar_gazebo)/rviz/robocar_camera.rviz"/>
- -->
+ 
 
 </launch>

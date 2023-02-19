@@ -40,8 +40,8 @@
 <node pkg="tf" type="static_transform_publisher" name="origin_to_odom" args="0 0 0 0 0 0 origin odom 100" />
 -->
 
- <!--
+
  <node name="rviz" pkg="rviz" type="rviz" args="-d $(find racecar_gazebo)/rviz/robocar_camera.rviz"/>
- -->
+ 
 
 </launch>
