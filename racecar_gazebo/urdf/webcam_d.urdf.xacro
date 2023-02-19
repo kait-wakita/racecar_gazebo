@@ -21,7 +21,7 @@
     </link>
 
     <joint name="webcam${sub}_joint" type="fixed">
-      <origin xyz="${transX} ${transY} ${transZ}" rpy="0 0 0" />
+      <origin xyz="${transX} ${transY} ${transZ}" rpy="0 0 -1.57" />
       <parent link="${parent}"/>
       <child link="webcam${sub}"/>
     </joint>
@@ -34,7 +34,7 @@
       <sensor type="camera" name="webcam${sub}">
         <update_rate>10.0</update_rate>
         <camera name="webcam${sub}">
-          <pose>${webcam_size/2} 0 0 0 1.57 0}</pose>
+          <pose>${webcam_size/2} 0 0 0 1.57 1.57}</pose>
           <horizontal_fov>2,09333</horizontal_fov>
           <image>
             <width>1960</width>

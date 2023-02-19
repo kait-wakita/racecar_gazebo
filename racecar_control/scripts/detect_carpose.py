@@ -98,7 +98,8 @@ class CarExtract(object):
                 self._pose.orientation.w = q[3]
 
                 br = tf.TransformBroadcaster()
-                br.sendTransform((x_w,y_w,0),q,rospy.Time.now(),"egocar","webcam0")
+                x_offset,y_offset = pix2xy(960,640)
+                br.sendTransform((x_w-x_offset,y_w-y_offset,0),q,rospy.Time.now(),"base_link","webcam0")
                            
                 try:
                     self._bbox_pub.publish(self._bridge.cv2_to_imgmsg(frame, 'bgr8'))
